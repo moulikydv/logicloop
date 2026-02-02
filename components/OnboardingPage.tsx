@@ -2,7 +2,7 @@ import React, { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Bot, ArrowRight, CheckCircle2, Shield, Users, Award, Building2, Mail, User } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 const STEPS = [
     { id: 1, name: 'Business' },
