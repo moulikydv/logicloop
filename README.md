@@ -1,20 +1,60 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Logic Loop — Intelligent Review Automation
 
-# Run and deploy your AI Studio app
+Logic Loop is a premium reputation management platform designed to help local businesses automate their 5-star growth. It captures positive reviews on autopilot and intercepts negative ones instantly.
 
-This contains everything you need to run your app locally.
+## 🚀 Features
 
-View your app in AI Studio: https://ai.studio/apps/temp/1
+- **Automated 5-Star Growth**: Seamlessly capture positive reviews across Google Maps, Facebook, and Yelp.
+- **Real-time Crisis Control**: Identify negative reviews in real-time and alert your team instantly via Email or SMS.
+- **AI-Powered Engagement**: Use specialized AI to craft personalized, brand-aligned responses to positive feedback automatically.
+- **Optimized Onboarding**: A high-conversion multi-step form to qualify leads and trigger custom reputation audits.
+- **Email Notifications**: Integrated with EmailJS for instant lead notifications and customer confirmations.
 
-## Run Locally
+## 🛠️ Performance Optimizations
 
-**Prerequisites:**  Node.js
+- **Route-based Code Splitting**: Lazy loading of complex modules to ensure lightning-fast initial page loads.
+- **Logic Memoization**: Optimized React performance using `useMemo` and `useCallback`.
+- **Static Data Strategies**: Efficient memory management via static extraction of configuration data.
 
+## 💻 Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/moulikydv/logicloop.git
+   cd logicloop
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Setup Environment Variables:
+   Create a `.env.local` file in the root directory and add your Gemini API key:
+   ```env
+   VITE_GEMINI_API_KEY=your_actual_key_here
+   ```
+
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+## 📧 Email Integration Setup
+
+This project uses EmailJS. To make the onboarding form functional, update the following keys in `components/OnboardingPage.tsx`:
+
+- `SERVICE_ID`
+- `TEMPLATE_ID`
+- `PUBLIC_KEY`
+
+---
+
+Built with React, Vite, Tailwind CSS, and Framer Motion.
