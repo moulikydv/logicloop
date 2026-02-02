@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Bot, ArrowRight, CheckCircle2, Shield, Users, Award, Building2, Mail, User } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
@@ -34,6 +34,12 @@ const EMAILJS_CONFIG = {
 export const OnboardingPage: React.FC = () => {
     const navigate = useNavigate();
     const [step, setStep] = useState(1);
+
+    // Auto-scroll to top on mount and step changes
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [step]);
+
     const [formData, setFormData] = useState({
         businessName: '',
         email: '',
