@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Video, Instagram, TrendingUp } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export const ComingSoon: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <section id="coming-soon" className="py-24 bg-white relative overflow-hidden">
       {/* Decorative Background */}
@@ -81,7 +83,10 @@ export const ComingSoon: React.FC = () => {
               </li>
             </ul>
 
-            <button className="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-slate-800 transition-all flex items-center gap-3 shadow-xl hover:shadow-2xl">
+            <button
+              onClick={() => navigate('/get-started')}
+              className="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-slate-800 transition-all flex items-center gap-3 shadow-xl hover:shadow-2xl"
+            >
               Join the Beta Waitlist
               <TrendingUp size={20} />
             </button>

@@ -25,14 +25,6 @@ export const FeatureSection: React.FC<FeatureSectionProps> = ({ title, descripti
         <p className="text-lg text-slate-500 leading-relaxed max-w-lg">
           {description}
         </p>
-        <div className="pt-4">
-          <button className="group flex items-center gap-2 font-bold text-slate-900 hover:text-blue-600 transition-colors">
-            Learn more
-            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </button>
-        </div>
       </motion.div>
 
       <motion.div
@@ -50,6 +42,6 @@ export const FeatureSection: React.FC<FeatureSectionProps> = ({ title, descripti
           />
         </div>
       </motion.div>
-    </div>
+    </div >
   );
 };
