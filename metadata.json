@@ -1,0 +1,9 @@
+
+{
+  "name": "Logic Loop - Intelligent Review Automation",
+  "description": "Logic Loop automates customer review management with AI-powered replies, instant alerts for negative feedback, and upcoming video sentiment analysis for TikTok and Instagram.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
